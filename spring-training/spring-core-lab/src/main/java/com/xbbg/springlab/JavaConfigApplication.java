@@ -1,5 +1,6 @@
 package com.xbbg.springlab;
 
+import com.xbbg.springlab.config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class JavaConfigApplication {
