@@ -16,9 +16,12 @@
         http://www.springframework.org/schema/mvc
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!-- Discover Spring MVC controllers -->
-    <context:component-scan
-        base-package="com.xbbg.springlab.controller" />
+    <!--
+        Discover controllers, services, repositories, and the exception handler.
+        CategoryController is injected with CategoryService.
+        CategoryServiceImpl is injected with CategoryRepository.
+    -->
+    <context:component-scan base-package="com.xbbg.springlab" />
 
     <!-- Enable annotation-based MVC configuration -->
     <mvc:annotation-driven />
